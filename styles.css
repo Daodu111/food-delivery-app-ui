@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@
     /*overflow-x: hidden;*/
 }
 
+/*-----NavBar and Footer----------*/
 .container {
     width: 84%;
     max-width: 1800px;
@@ -171,7 +174,7 @@ footer {
     box-sizing: border-box;
     line-height: 1.5;
     border-top: 1px solid black;
-    margin-top: 50rem;
+    /* margin-top: 50rem; */
     overflow-x: hidden;
 }
 .footer__container {
@@ -208,3 +211,136 @@ ul {
     margin: 8rem 8rem 10px 0;
 }
 
+/*---------About App Section--------------*/
+.app-info{
+    padding-top: 100px;
+}
+
+.horizontal{
+    border-top: 3px solid #E4E4E4;
+    width: 60%;
+    margin: 2.5em auto;
+}
+
+.info-header{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.8;
+    text-align: center;
+    margin-bottom: 4em;
+}
+
+.info-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: -7em 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.different{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.info-image{
+    width: 40%;
+}
+.info-image>img{
+    width: 100%;
+}
+
+.info-details{
+    width: 40%;
+}
+
+.content1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #FA4A0C;
+    margin-bottom: 0.25em;
+}
+
+.content2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 1000;
+    font-size: 30px;
+    letter-spacing: 0.2px;
+    color: #252B42;
+    width: 90%;
+}
+
+.content3{
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 1em;
+    line-height: 25px;
+    width: 70%;
+    letter-spacing: 0.2px;
+    color: #737373;
+}
+
+@media screen and (max-width: 800px){
+    .app-info{
+        width: 100vw;
+    }
+
+    .horizontal{
+        display: none;
+    }
+
+    .horizontal2{
+        border-top: 3px solid #E4E4E4;
+        margin-bottom: 2em;
+    }
+
+    .info-header{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 0.5em;
+    }
+
+    .info-content{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-image{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .info-image>img{
+        width: 100%;
+        margin-left: 10%;
+    }
+    
+    .info-details{
+        width: 80%;
+        text-align: center;
+    }
+
+    .content1{
+        font-size: 17px;
+    }
+
+    .content2, .content3{
+        width: 80%;
+        text-align: center;
+        margin: 0.5em auto;
+    }
+}
