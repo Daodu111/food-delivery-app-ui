@@ -24,14 +24,13 @@ section {
 
 nav {
     width: 100vw;
-    height: 6.5rem;
+    height: 7vh;
     position: fixed;
     top: 1rem;
     z-index: 10;
 }
 nav img {
-    width: 246px;
-    height: 102px;
+    width: 120px;
 }
 nav button {
     display: none;
@@ -65,7 +64,7 @@ nav button {
 /* Hero Section */
 #hero-section .hero-section{
     height: 80vh;
-    /* margin-top: 100px; */
+    margin-top: 70px;
     background: url(./images/Hero-img.png);
     background-repeat: no-repeat;
     background-size: cover;
