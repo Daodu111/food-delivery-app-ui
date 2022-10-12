@@ -63,6 +63,7 @@ nav button {
 
 /* Hero Section */
 #hero-section .hero-section{
+    width: 100vw;
     height: 80vh;
     margin-top: 70px;
     background: url(./images/Hero-img.png);
@@ -89,16 +90,18 @@ nav button {
     font-size: 20px;
 }
 .hero-content h1{
-    font-size: 30px;
-    font-weight: bold;
+    font-family: "Poppins";
+    font-size: 36px;
+    font-weight: 600;
 }
 .hero-content p{
     margin-top: 10px;
     font-size: 1.2em;
 }
 .btn{
-    position: absolute;
-    top: 65%;
+    /* position: absolute;
+    top: 70%; */
+    margin: 1em 0;
 }
 
 button{
@@ -132,15 +135,15 @@ button{
 
 .ad .app .img1{
     position: absolute;
-    top: 60%;
+    top: 65%;
     left: 33%;
 }
 
 .ad .app .img2{
     position: absolute;
     height: 300px;
-    top: 80%;
-    left: 53%;
+    top: 85%;
+    left: 54%;
 }
 /* End of Hero Section */
 
@@ -294,8 +297,8 @@ ul {
 }
 
 /*---------About App Section--------------*/
-.app-info{
-    padding-top: 100px;
+.app-info{   
+    margin-top: 23em;
 }
 
 .horizontal{
