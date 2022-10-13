@@ -205,6 +205,25 @@ nav button {
     padding: 1em 3em;
 }
 
+.hero-image{
+    position: relative;
+    margin:0 auto;
+}
+
+.hero-image .img1{
+    width: 30em;
+    position: absolute;
+    top: -230px;
+    left: 30%;
+}
+
+.hero-image .img2{
+    width: 15em;
+    position: absolute;
+    top: -60px;
+    left: 53.5%;
+}
+
 @media screen and (max-width: 800px){
     .hero-section{
         background: #FAFAFA;
@@ -251,33 +270,29 @@ nav button {
     .appstore:hover{
         padding: 0.75em 2.5em;
     }
+    .hero-image{
+        width: 100vw;
+    }
+    .hero-image .img1{
+        width: 15em;
+        position: absolute;
+        top: -110px;
+        left: 50px;
+    }    
+    .hero-image .img2{
+        width: 7em;
+        position: absolute;
+        top: -20px;
+        left: 200px;
+    }
 }
-
-/* Advert */
-#ad .ad{
-    position: relative;
-}
-
-.ad .app .img1{
-    width: 10em;
-    position: absolute;
-    top: 65%;
-    left: 33%;
-}
-
-.ad .app .img2{
-    position: absolute;
-    height: 300px;
-    top: 85%;
-    left: 54%;
-}
-/* End of Hero Section */
+/*----------End of Hero Section------------*/
 
 
 
 /*---------About App Section--------------*/
 .app-info{   
-    margin-top: 23em;
+    margin-top: 30em;
     width: 100%;
 }
 
@@ -358,6 +373,7 @@ nav button {
 @media screen and (max-width: 800px){
     .app-info{
         width: 100vw;
+        margin-top: 15em;
     }
 
     .horizontal{
