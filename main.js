@@ -17,4 +17,4 @@ const closeNav = ()=> {
 }
 
 navOpenBtn.addEventListener('click', openNav);
-navCloseBtn.addEventListener('click', closeNav);
+navCloseBtn.addEventListener('click', closeNav); 

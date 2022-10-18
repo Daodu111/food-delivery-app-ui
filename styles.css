@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
@@ -12,12 +12,31 @@
     appearance: 0;
     list-style: none;
     text-decoration: none;
+    /* max-width: 1300px; */
     /* overflow-x: hidden; */
+}
+
+body{
+    width: 100%;
+}
+
+@media screen and (min-width: 1440px) {
+    *{
+        max-width: 1350px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 /*--------------NavBar---------------*/
 .container {
-    width: 84%;
+    width: 100%;
     margin-inline: auto;
 }
 
@@ -29,6 +48,7 @@ nav {
     z-index: 10;
     background-color: #FFFFFF;
 }
+
 nav img {
     width: 140px;
 }
@@ -55,8 +75,13 @@ nav button {
 .nav__items li a {
     color: #252B42;
 }
-.nav__items li a:active {
-    color: #FA4A0C;
+.nav__items li :hover{
+    cursor: pointer; 
+    background-color: #c75125;
+    color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    transition-duration: 1s;
 }
 .nav__items li a .home{
     color: #FA4A0C;
@@ -114,6 +139,11 @@ nav button {
         animation-delay: 800ms;
     }
 
+    .nav__items li:hover{
+        cursor: pointer;
+        background-color: #E4E4E4;
+    }
+
     .uil{
         color: #737373;
     }
@@ -137,7 +167,7 @@ nav button {
     }
 }
 
-@media screen and (max-width: 1000px) and(max-width:1400){
+@media screen and (max-width: 1000px) and(max-width:1400) and(max-width: 3000px){
     .nav__container {
         /* height: 100%; */
         display: flex;
@@ -161,6 +191,14 @@ nav button {
     }
     .nav__items li a.home{
         color: #FA4A0C;
+    }
+    .nav__items li :hover{
+        cursor: pointer;
+        background-color: #c75125;
+        color: #fff;
+        padding: 1em;
+        border-radius: 10px;
+        transition-duration: 1s;
     }
 }
 
@@ -201,57 +239,57 @@ nav button {
     padding-bottom: 1em;
 }
 
+/* .hero-button :hover{
+    width: 2em;
+} */
+
 .playstore{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     color: #FFFFFF;
-    padding: 0.75em 2.5em;
+    width: 200px;
+    height: 60px;
     border-radius: 30px;
     background-color: #FA4A0C;
     margin-right: 1em;
     transition: padding .8s; 
 }
 
-.playstore:hover{
-    padding: 1em 3em;
+.playstore :hover{
+    cursor: pointer;
+    color: #000;    
 }
 
 .appstore{
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 20px;
     color: #FFFFFF;
-    padding: 0.75em 2.5em;
+    width: 200px;
+    height: 60px;
     border: 1px solid #fff;
     border-radius: 30px;
     background: transparent;
     transition: padding .8s, background-color .8s;
 }
 
-.appstore:hover{
-    padding: 1em 3em;
+.appstore :hover{
+    cursor: pointer;
+    background-color: #cbc0c0 ;
 }
 
 .hero-image{
-    position: relative;
-    margin:0 auto;
+    position: relative;   
 }
 
-.hero-image .img1{
-    width: 30em;
+.phones{
     position: absolute;
-    top: -230px;
-    left: 30%;
-}
-
-.hero-image .img2{
-    width: 15em;
-    position: absolute;
-    top: -60px;
-    left: 53.5%;
+    top: 10.5rem;
+    left: 50%;
+    transform:translate(-50%, -50%);
 }
 
 @media screen and (max-width: 800px){
@@ -282,39 +320,51 @@ nav button {
     }
     .playstore{
         width: 50%;
+        font-size: 14px;
         padding: 1em 2.5em;
         margin: 0 auto;
         letter-spacing: 1px;
     }
     .playstore:hover{
+        cursor: pointer;
         padding: 0.75em 2.5em;
     }
     .appstore{
         width: 50%;
-        padding: 1em 2.5em;
         margin: 1em auto;
         color: #FA4A0C;
         border: 1px solid #FA4A0C;
         letter-spacing: 1px;
+        font-size: 14px;
     }
     .appstore:hover{
+        cursor: pointer;
         padding: 0.75em 2.5em;
     }
     .hero-image{
-        width: 100vw;
+        position: relative;  
     }
-    .hero-image .img1{
-        width: 15em;
-        position: absolute;
-        top: -110px;
-        left: 50px;
-    }    
-    .hero-image .img2{
-        width: 7em;
-        position: absolute;
-        top: -20px;
-        left: 200px;
+    .phones{
+        position: absolute; 
+        width: 18rem;
+        top: 4rem;
+        left: 50%;
+        transform:translate(-50%, -50%);
     }
+}
+
+@media screen and (device-width: 768px) {
+    .hero-image{
+        width: 100%;
+    }
+    .phones{
+        position: absolute;
+        width: 20rem;
+        top: 5rem;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    
 }
 /*----------End of Hero Section------------*/
 
@@ -322,7 +372,7 @@ nav button {
 
 /*---------About App Section--------------*/
 .app-info{   
-    margin-top: 30em;
+    margin-top: 35em;
     width: 100%;
 }
 
@@ -359,15 +409,17 @@ nav button {
     flex-direction: row-reverse;
 }
 
+
+/*-------Made some changes here-----------*/
 .info-image{
-    width: 40%;
+    width: 35%;
 }
 .info-image>img{
     width: 100%;
 }
 
 .info-details{
-    width: 40%;
+    width: 35%;
 }
 
 .content1{
@@ -388,11 +440,13 @@ nav button {
     letter-spacing: 0.2px;
     color: #252B42;
     width: 90%;
+    margin: 0;
 }
 
 .content3{
     font-style: normal;
     font-weight: 500;
+    margin: 0;
     margin-top: 1em;
     line-height: 25px;
     width: 70%;
@@ -456,6 +510,14 @@ nav button {
     }
 }
 
+/* @media screen and (min-width: 1320px){
+    .info-details{
+        text-align: left;
+    }
+    .content1,.content2,.content3{
+        text-align: left;
+    } */
+
 
 /*-----------Download-app-section-----------*/
 .download-section{
@@ -465,6 +527,7 @@ nav button {
     background-position: center;
     text-align: center;
     padding: 10em 0em;
+    margin-top: 5em;
 }
 
 .download-content{
@@ -491,7 +554,8 @@ nav button {
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
-    padding: 1em 1.5em;
+    width: 142px;
+    height: 64px;
     border-radius: 10px;
     background-color: #FA4A0C;
     margin-right: 0.75em;
@@ -499,8 +563,9 @@ nav button {
 }
 
 .playstore2:hover{
+    cursor: pointer;
     padding: 1em;
-    background-color: #e24811;
+    background-color: #c75125;
 }
 
 .appstore2{
@@ -509,14 +574,18 @@ nav button {
     font-weight: 600;
     font-size: 16px;
     color: #FFFFFF;
-    padding: 1em 2em;
+    /* width: 173px;   Width in figma design */
+    width: 142px;
+    height: 60px;
     border: 1px solid #fff;
     border-radius: 10px;
     background: transparent;
+    margin-top: 1em;
     transition: padding .8s, background-color .8s;
 }
 
 .appstore2:hover{
+    cursor: pointer;
     padding: 1em;
     background-color: #cbc0c0 ;
     opacity: 0.9;
@@ -526,6 +595,7 @@ nav button {
     .download-section{
         background: #252B42;
         padding: 7em 3em;
+        margin-top: 0;
     }
     .download-content p{
         font-size: 20px;
@@ -533,6 +603,7 @@ nav button {
     }
     .playstore2{
         padding: 1em;
+        margin: 0;
     }
     .appstore2{
         padding: 1em;
@@ -566,19 +637,9 @@ footer{
     justify-content: center;
 }
 
-.link-wrapper{
-    width: 20%;
-    text-align: center;
-}
-.fab{
-    font-size: 30px;
-    text-align: center;
-    border-radius: 12px;
-    color: #FA4A0C;
-    transition: all 0.5s ease;
-}
-.fab:hover {
-    color: rgb(253, 177, 37);
+.footer-links :hover{
+    cursor: pointer;
+    width: 20%;   
 }
 
 .footer-text{
@@ -597,6 +658,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 2em;
     }
     .footer-image{
         display: none;
@@ -604,8 +666,5 @@ footer{
     .footer-image, .footer-links, .footer-text{
         width: 80%;
         margin: 2% 0;
-    }
-    .fab{
-        font-size: 24px;
     }
 }
